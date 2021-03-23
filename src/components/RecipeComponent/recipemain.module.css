@@ -1,0 +1,24 @@
+
+.App{
+    background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+    min-height: 100vh;
+  }
+  
+  .search1{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search2{
+    width: 50%;
+    border: none;
+    padding: 10px;
+  }
+  
+  .fa-search{
+    padding: 10px;
+    font-size: 25px;
+  }
+  

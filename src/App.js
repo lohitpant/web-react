@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/pages/Home';
+import Products from './components/pages/Products';
+import QuizComp from './components/QuizComponent.js/QuizComp';
+import Calculator from './components/calculatorComponent/Calculator';
+import RecipeMain from './components/RecipeComponent/RecipeMain';
+import Weather from './components/Weather/Weather';
+import MyWork from './components/MyWork'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <>
+      <Router>
+        <Navbar/>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/products" exact component={Products}/>
+          <Route path="/calculator" exact component={Calculator}/>
+          <Route path="/quiz" exact component={QuizComp}/>
+          <Route path="/recipes" exact component={RecipeMain}/>
+          <Route path="/weather" exact component={Weather}/>
+          <Route path="/mywork" exact component={MyWork}/>
+        </Switch>
+      
+      </Router>
+      
+    </>
   );
 }
 
