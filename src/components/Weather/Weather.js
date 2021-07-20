@@ -12,7 +12,7 @@ function Weather() {
     const[weather, setWeather]=useState({});
 
     const search= event=>{
-        if(event.key=="Enter" && query){
+        if(event.key==="Enter" && query){
             if(query){
             fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}&lang=hi`)         
             .then(res=>res.json())

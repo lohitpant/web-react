@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import './Footer.css'
 
-export default function(){
-    return(
+export default function Footer () {
+    return (
         <div className="footer-container">
             <section className="footer-subscription">
                 <p className="footer-subscription-heading">
@@ -15,8 +15,8 @@ export default function(){
                 </p>
                 <div className="input-areas">
                     <form>
-                    <input type="email" name="email" placeholder="Your Email" className="footer-input" ></input>
-                    <Button buttonStyle="btn--outline" >Subscribe</Button>
+                        <input type="email" name="email" placeholder="Your Email" className="footer-input" ></input>
+                        <Button buttonStyle="btn--outline" >Subscribe</Button>
                     </form>
                 </div>
             </section>
@@ -30,7 +30,7 @@ export default function(){
                         <Link to="/">Investors</Link>
                         <Link to="/">Work with Me</Link>
                         <Link to="/">Connect</Link>
-                    </div>                    
+                    </div>
                 </div>
 
                 <div className="footer-link-wrapper">
@@ -42,7 +42,7 @@ export default function(){
                         <Link to="/">Investors</Link>
                         <Link to="/">Work with Me</Link>
                         <Link to="/">Connect</Link>
-                    </div>                    
+                    </div>
                 </div>
 
                 <div className="footer-link-wrapper">
@@ -54,20 +54,20 @@ export default function(){
                         <Link to="/">Investors</Link>
                         <Link to="/">Work with Me</Link>
                         <Link to="/">Connect</Link>
-                    </div>                    
+                    </div>
                 </div>
-                
+
             </div>
 
             <section className="social-media">
                 <div className="social-media-wrap">
                     <div className="footer-logo">
                         <Link to="/" className="social-logo">
-                            Made with <i class="fas fa-heart"></i>
+                            Made with <i className="fas fa-heart"></i>
                         </Link>
                     </div>
                     <small className="website-rights">Lohit © 2021</small>
-                    <div className="social-icons" >                    
+                    <div className="social-icons" >
                         <Link to='/' className="social-icon-link facebook" target="_blank" aria-label="Facebook">
                             <i className="fab fa-facebook-f" />
                         </Link>
@@ -78,7 +78,7 @@ export default function(){
                             <i className="fab fa-twitter" />
                         </Link>
                         <Link to='//github.com/lohitpant' className="social-icon-link youtube" target="_blank" aria-label="youtube">
-                        <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </Link>
                         <Link to='//www.linkedin.com/in/lohitpant/' className="social-icon-link linkedin" target="_blank" aria-label="linkedin">
                             <i className="fab fa-linkedin" />

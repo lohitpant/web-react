@@ -30,7 +30,7 @@ export default function App(){
 
   const doSub=()=>{
     let currentNum=document.querySelector('#num').value;
-    if(result==0 && currentNum ){
+    if(result===0 && currentNum ){
     setResult(document.querySelector('#num').value);
     document.querySelector('#num').value="";
     return;
@@ -45,7 +45,7 @@ export default function App(){
 
   const doMul=()=>{
     let currentNum=document.querySelector('#num').value;
-    if(result==0 && currentNum ){
+    if(result===0 && currentNum ){
     setResult(document.querySelector('#num').value);
     document.querySelector('#num').value="";
     return;
@@ -60,7 +60,7 @@ export default function App(){
 
   const doDiv=()=>{
     let currentNum=document.querySelector('#num').value;
-    if(result==0 && currentNum ){
+    if(result===0 && currentNum ){
     setResult(document.querySelector('#num').value);
     document.querySelector('#num').value="";
     return;
@@ -93,17 +93,17 @@ export default function App(){
          
       
       <div>      
-      <button onClick={doSum} class="btn btn-outline-dark" title="Add" >+</button>
+      <button onClick={doSum} className="btn btn-outline-dark" title="Add" >+</button>
       &ensp;
-      <button onClick={doSub} class="btn btn-outline-dark" title="Subtract" >-</button>
+      <button onClick={doSub} className="btn btn-outline-dark" title="Subtract" >-</button>
       &ensp;
-      <button onClick={doMul} class="btn btn-outline-dark" title="Multiply" >*</button>
+      <button onClick={doMul} className="btn btn-outline-dark" title="Multiply" >*</button>
       &ensp;
-      <button onClick={doDiv} class="btn btn-outline-dark" title="Divide" >/</button>
+      <button onClick={doDiv} className="btn btn-outline-dark" title="Divide" >/</button>
       &ensp;
-      <button onClick={doSqrt} class="btn btn-outline-dark" title="SquareRoot" >Sqrt</button>
+      <button onClick={doSqrt} className="btn btn-outline-dark" title="SquareRoot" >Sqrt</button>
       &ensp;
-      <button onClick={doClear} class="btn btn-dark" title="Clear All">Clear</button>
+      <button onClick={doClear} className="btn btn-dark" title="Clear All">Clear</button>
       </div>      
       
     </div>

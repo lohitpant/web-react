@@ -17,10 +17,7 @@ export default function Cards(){
                         <CardItem src='/images/weather.jpg' text="Weather in Hindi" 
                         label="New" path="/weather" />
                     </ul>
-                    <ul className="cards__item">
-                        
-                       
-                        
+                    <ul className="cards__item">                        
                     </ul>                    
                 </div>
             </div>
