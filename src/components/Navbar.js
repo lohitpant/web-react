@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import './Navbar.css';
+import superman from '../images/superman.png'
 
 export default function Navbar(){
 
@@ -30,7 +31,8 @@ export default function Navbar(){
         <>
         <nav className="navbar">
             <div className="navbar-container">
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}><i className="fas fa-heart"></i>
+                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                    <img src={superman} alt={superman} className='superman' />                    
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click?"fas fa-times":"fas fa-bars"}/>
@@ -41,7 +43,7 @@ export default function Navbar(){
                         <Link to="/" className="nav-links" onClick={closeMobileMenu}>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/services" className="nav-links" onClick={closeMobileMenu}>My Profile</Link>
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>My Profile</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/mywork" className="nav-links" onClick={closeMobileMenu}>My Work</Link>

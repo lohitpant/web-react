@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import Products from './components/pages/Products';
-import QuizComp from './components/QuizComponent.js/QuizComp';
+import QuizComp from './components/QuizComponent/QuizComp';
 import Calculator from './components/calculatorComponent/Calculator';
 import RecipeMain from './components/RecipeComponent/RecipeMain';
 import Weather from './components/Weather/Weather';

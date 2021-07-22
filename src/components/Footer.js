@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import './Footer.css'
 
-export default function Footer () {
+export default function Footer() {
     return (
         <div className="footer-container">
             <section className="footer-subscription">
@@ -66,7 +66,7 @@ export default function Footer () {
                             Made with <i className="fas fa-heart"></i>
                         </Link>
                     </div>
-                    <small className="website-rights">Lohit © 2021</small>
+                    <small className="website-rights">© Copyright Lohit 2021</small>
                     <div className="social-icons" >
                         <Link to='/' className="social-icon-link facebook" target="_blank" aria-label="Facebook">
                             <i className="fab fa-facebook-f" />
