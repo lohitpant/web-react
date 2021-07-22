@@ -24,19 +24,7 @@ export default function Footer() {
                 <div className="footer-link-wrapper">
                     <div className="footer-link-items">
                         <h2>About Me</h2>
-                        <Link to="/sign-up">How it Works</Link>
-                        <Link to="/">Testimonials</Link>
-                        <Link to="/">Careers</Link>
-                        <Link to="/">Investors</Link>
-                        <Link to="/">Work with Me</Link>
-                        <Link to="/">Connect</Link>
-                    </div>
-                </div>
-
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>Join Me</h2>
-                        <Link to="/sign-up">How it Works</Link>
+                        <Link to="/">How it Works</Link>
                         <Link to="/">Testimonials</Link>
                         <Link to="/">Careers</Link>
                         <Link to="/">Investors</Link>
